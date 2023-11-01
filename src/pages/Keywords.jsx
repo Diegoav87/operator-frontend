@@ -57,7 +57,7 @@ export default function Keywords() {
   };
 
   const deletePair = (id) => {
-    fetch(`http://127.0.0.1:5000/relations/${id}/`, {
+    fetch(`https://operatorbackend.up.railway.app/relations/${id}/`, {
       method: "DELETE",
     })
       .then((response) => response.json())

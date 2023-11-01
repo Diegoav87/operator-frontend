@@ -51,7 +51,7 @@ export default function Dashboard() {
     formData.append("audio", audioFile); // Append the selected audio file
 
     // Make a POST request to your Flask API with the FormData
-    fetch("http://127.0.0.1:5000/call", {
+    fetch("https://operatorbackend.up.railway.app/call", {
       method: "POST",
       body: formData,
     })
