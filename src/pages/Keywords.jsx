@@ -12,7 +12,7 @@ export default function Keywords() {
   const [keywordData, setKeywordData] = useState([]);
 
   const fetchData = () => {
-    fetch("http://127.0.0.1:5000/relations")
+    fetch("https://operatorbackend.up.railway.app/relations")
       .then((response) => response.json())
       .then((data) => {
         console.log(data["words"]);
@@ -24,7 +24,7 @@ export default function Keywords() {
   };
 
   const submitPair = () => {
-    fetch("http://127.0.0.1:5000/relations", {
+    fetch("https://operatorbackend.up.railway.app/relations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Specify the content type of the request body
